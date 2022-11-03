@@ -10,3 +10,7 @@ require "user.treesitter"
 require "user.spectre"
 require "user.autopairs"
 require "user.comments"
+require "user.nvimtree"
+require "user.lualine"
+require "user.toggleterm"
+

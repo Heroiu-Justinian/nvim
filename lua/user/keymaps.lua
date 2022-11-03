@@ -24,7 +24,6 @@ keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
-keymap("n", "<leader>e", ":Lex 20<cr>", opts)
 
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize -2<CR>", opts)
@@ -87,10 +86,45 @@ function telescope_live_grep()
 
   }
 end
+
+
+
+keymap("n", "gD", "<cmd>lua vim.lsp.buf.declaration()<CR>", opts)
+keymap("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", opts)
+keymap("n", "K", "<cmd>lua vim.lsp.buf.hover()<CR>", opts)
+keymap("n", "gi", "<cmd>lua vim.lsp.buf.implementation()<CR>", opts)
+keymap("n", "<C-k>", "<cmd>lua vim.lsp.buf.signature_help()<CR>", opts)
+keymap("n", "<leader>rn", "<cmd>lua vim.lsp.buf.rename()<CR>", opts)
+keymap("n", "gr", "<cmd>lua vim.lsp.buf.references()<CR>", opts)
+keymap("n", "<leader>ca", "<cmd>lua vim.lsp.buf.code_action()<CR>", opts)
+--show error
+keymap("n", "se", "<cmd>lua vim.diagnostic.open_float()<CR>", opts)
+keymap("n", "[d", '<cmd>lua vim.diagnostic.goto_prev({ border = "rounded" })<CR>', opts)
+keymap(
+"n",
+"gl",
+'<cmd>lua vim.lsp.diagnostic.show_line_diagnostics({ border = "rounded" })<CR>',
+opts
+)
+keymap("n", "]d", '<cmd>lua vim.diagnostic.goto_next({ border = "rounded" })<CR>', opts)
+keymap("n", "<leader>q", "<cmd>lua vim.diagnostic.setloclist()<CR>", opts)
+
 keymap("n","<leader>f","<cmd>lua telescope_find_files()<cr>",opts)
 keymap("n", "<c-t>", "<cmd>lua telescope_live_grep()<cr>", opts)
 keymap("n","gd","<cmd>Telescope lsp_definitions()<cr>",opts)
 keymap("n","gr","<cmd>Telescope lsp_references<cr>",opts)
+keymap("n","km","<cmd>Telescope keymaps<cr>",opts)
+
+
+-- File navigation
+keymap("n","<leader>e","<cmd>NvimTreeToggle<cr>",opts)
+keymap("n","<leader>o","<cmd>NvimTreeFocus<cr>",opts)
+
+-- Gitsings
+keymap("n","ph","<cmd>Gitsigns preview_hunk<cr>",opts)
+keymap("n","pi","<cmd>Gitsign preview_hunk_inline<cr>",opts)
+
+
 -- Abstract syntax tree 
 
 keymap("n","<leader>s","<cmd>SymbolsOutline<cr>",opts)

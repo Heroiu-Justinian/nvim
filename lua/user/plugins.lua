@@ -46,6 +46,14 @@ return packer.startup(function(use)
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
 
+  -- Git integration
+  use {
+  'lewis6991/gitsigns.nvim',
+  config = function()
+    require('gitsigns').setup()
+    end
+  }
+
   -- Colorschemes
   --use "christianchiarulli/nvcode-color-schemes.vim"
    use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
@@ -85,7 +93,14 @@ return packer.startup(function(use)
   use "nvim-telescope/telescope.nvim"
   use "nvim-telescope/telescope-media-files.nvim" -- media support
   use  "nvim-telescope/telescope-file-browser.nvim" -- file browsing for the win
+  -- File explorer
+  use "nvim-tree/nvim-tree.lua"
 
+  -- Toggleterm
+  use "akinsho/toggleterm.nvim"
+  -- Lualine
+  use "nvim-lualine/lualine.nvim"
+  use "vim-lua/lsp-status.nvim"
   --find and replace using the spectral forbidden powershell
   use "windwp/nvim-spectre"
 

@@ -3,7 +3,7 @@
 
      python = {
        analysis = {
-         typeCheckingMode = "on"
+         typeCheckingMode = "off"
        }
      }
  	},
