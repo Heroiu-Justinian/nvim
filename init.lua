@@ -13,4 +13,5 @@ require "user.comments"
 require "user.nvimtree"
 require "user.lualine"
 require "user.toggleterm"
+require "impatient"
 

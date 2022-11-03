@@ -121,8 +121,8 @@ keymap("n","<leader>e","<cmd>NvimTreeToggle<cr>",opts)
 keymap("n","<leader>o","<cmd>NvimTreeFocus<cr>",opts)
 
 -- Gitsings
-keymap("n","ph","<cmd>Gitsigns preview_hunk<cr>",opts)
-keymap("n","pi","<cmd>Gitsign preview_hunk_inline<cr>",opts)
+keymap("n","gh","<cmd>Gitsigns preview_hunk<cr>",opts)
+keymap("n","gi","<cmd>Gitsign preview_hunk_inline<cr>",opts)
 
 
 -- Abstract syntax tree 
