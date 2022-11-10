@@ -13,5 +13,5 @@ require "user.comments"
 require "user.nvimtree"
 require "user.lualine"
 require "user.toggleterm"
-require "impatient"
-
+require "impatient" -- didn't bother to make a configfile for this one
+require "user.bufferline"

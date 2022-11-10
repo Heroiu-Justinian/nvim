@@ -1,22 +1,5 @@
 
 
-function get_lsp_client()
-  local buf_clients = require "lsp-status".status()
-  local buf_client_names = {}
-
-  -- add client
-  -- for _, client in pairs(buf_clients) do
-  --     table.insert(buf_client_names, client.name)
-  --     vim.inspect(client.name)
-  -- end
-
-  local language_servers = buf_clients
-  return language_servers
-end
-
-LSP = get_lsp_client()
-print(LSP)
-
 require('lualine').setup {
   options = {
     icons_enabled = true,

@@ -58,6 +58,9 @@ return packer.startup(function(use)
     end
   }
 
+  -- devicons cause we feeling fancy atm
+  use 'nvim-tree/nvim-web-devicons' 
+  
   -- Colorschemes
   --use "christianchiarulli/nvcode-color-schemes.vim"
    use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
@@ -66,6 +69,9 @@ return packer.startup(function(use)
   --      'mastertinner/nvim-quantum',
     --    config = function() require('quantum').setup() end,
     --}
+
+   use "glepnir/dashboard-nvim"
+
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -77,12 +83,18 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-nvim-lua"
   -- use {'tzachar/cmp-tabnine', run='./install.sh', requires = 'hrsh7th/nvim-cmp'} -- spicy completion here
 
+  -- Debugging with DAP
+   
+
   --autopairs
   use "windwp/nvim-autopairs"
 
   -- automated commenting
   use "numToStr/Comment.nvim" 
   use "JoosepAlviste/nvim-ts-context-commentstring" -- context-dependent commenting; useful for frameworks 
+
+  --multicursor
+  use "mg979/vim-visual-multi"
 
   -- snippets
   use "L3MON4D3/LuaSnip" --snippet engine
@@ -102,9 +114,13 @@ return packer.startup(function(use)
 
   -- Toggleterm
   use "akinsho/toggleterm.nvim"
+  
+  --Bufferline
+  use "akinsho/bufferline.nvim"
+
   -- Lualine
   use "nvim-lualine/lualine.nvim"
-  use "vim-lua/lsp-status.nvim"
+  -- use "vim-lua/lsp-status.nvim"
   --find and replace using the spectral forbidden powershell
   use "windwp/nvim-spectre"
 
@@ -118,6 +134,9 @@ return packer.startup(function(use)
 
   -- abstract syntax tree
   use 'simrat39/symbols-outline.nvim'
+
+  -- Training to git gud
+  use "ThePrimeagen/vim-be-good"
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
