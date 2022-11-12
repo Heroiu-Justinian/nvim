@@ -22,8 +22,6 @@ vim.cmd([[
   augroup end
 ]])
 
-
-
 -- Use a protected call so we don't error out on first use
 local status_ok, packer = pcall(require, "packer")
 if not status_ok then
@@ -59,8 +57,8 @@ return packer.startup(function(use)
   }
 
   -- devicons cause we feeling fancy atm
-  use 'nvim-tree/nvim-web-devicons' 
-  
+  use 'nvim-tree/nvim-web-devicons'
+
   -- Colorschemes
   --use "christianchiarulli/nvcode-color-schemes.vim"
    use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
@@ -84,7 +82,6 @@ return packer.startup(function(use)
   -- use {'tzachar/cmp-tabnine', run='./install.sh', requires = 'hrsh7th/nvim-cmp'} -- spicy completion here
 
   -- Debugging with DAP
-   
 
   --autopairs
   use "windwp/nvim-autopairs"
@@ -114,7 +111,10 @@ return packer.startup(function(use)
 
   -- Toggleterm
   use "akinsho/toggleterm.nvim"
-  
+
+  --git scrollbar
+  use "https://github.com/petertriho/nvim-scrollbar"
+
   --Bufferline
   use "akinsho/bufferline.nvim"
 
