@@ -148,3 +148,7 @@ cmp.setup {
     lua = true
   } ,
 }) ]]
+
+
+--Remap for leader key to , for emmet 
+vim.api.nvim_command('let g:user_emmet_leader_key=","')
