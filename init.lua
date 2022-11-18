@@ -15,7 +15,7 @@ require "user.lualine"
 require "user.toggleterm"
 require "impatient" -- didn't bother to make a configfile for this one
 require "user.bufferline"
-
+require "user.prettier"
 
 --Again, cannot bother to make another file just for this
 require("scrollbar").setup()

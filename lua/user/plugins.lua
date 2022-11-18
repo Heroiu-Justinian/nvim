@@ -84,6 +84,13 @@ return packer.startup(function(use)
   -- HTML completions and stuff
   use "mattn/emmet-vim"
 
+  --Because I can't stand the way my html and css look, I will include prettify
+  use "jose-elias-alvarez/null-ls.nvim"
+  -- use "averms/black-nvim"
+  use "MunifTanjim/prettier.nvim"
+
+  --formatter
+  use "mhartington/formatter.nvim"
 
   -- Debugging with DAP
 

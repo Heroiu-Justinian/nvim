@@ -134,3 +134,8 @@ keymap("n","<leader>s","<cmd>SymbolsOutline<cr>",opts)
 keymap("n", "<leader>rw", "<cmd>lua require('spectre').open_visual({select_word=true})<cr>",opts) -- search the word under cursor
 keymap("n", "<leader>rf", "<cmd> lua require('spectre').open_file_search()<cr>", opts)
 --keymap("n", "<leader>r" ,"lua require('spectre').open_visual() <cr>", opts) this is evil, never use
+
+
+
+--Prettier keybindings
+keymap("n","<leader>p","<cmd>Prettier<cr>")
