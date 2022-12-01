@@ -200,6 +200,11 @@ _G.packer_plugins = {
     path = "/home/onix/.local/share/nvim/site/pack/packer/start/nvim-spectre",
     url = "https://github.com/windwp/nvim-spectre"
   },
+  ["nvim-surround"] = {
+    loaded = true,
+    path = "/home/onix/.local/share/nvim/site/pack/packer/start/nvim-surround",
+    url = "https://github.com/kylechui/nvim-surround"
+  },
   ["nvim-tree.lua"] = {
     loaded = true,
     path = "/home/onix/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",

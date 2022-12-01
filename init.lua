@@ -19,3 +19,4 @@ require "user.prettier"
 
 --Again, cannot bother to make another file just for this
 require("scrollbar").setup()
+require("nvim-surround").setup()

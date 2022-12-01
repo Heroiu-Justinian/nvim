@@ -138,4 +138,4 @@ keymap("n", "<leader>rf", "<cmd> lua require('spectre').open_file_search()<cr>",
 
 
 --Prettier keybindings
-keymap("n","<leader>p","<cmd>Prettier<cr>")
+keymap("n","<leader>p","<cmd>Prettier<cr>", opts)

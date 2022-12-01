@@ -96,7 +96,8 @@ return packer.startup(function(use)
 
   --autopairs
   use "windwp/nvim-autopairs"
-
+ --and the antagonist, surround ( gotta delete them brackets somethow )
+  use "https://github.com/kylechui/nvim-surround"
   -- automated commenting
   use "numToStr/Comment.nvim" 
   use "JoosepAlviste/nvim-ts-context-commentstring" -- context-dependent commenting; useful for frameworks 
